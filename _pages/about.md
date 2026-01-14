@@ -18,13 +18,15 @@ Publications
 
 Conference Papers
 ------
-1. **Yuxin Liang**, Peng Yang, Yuanyuan He, Feng Lyu, [Resource-Efficient Generative AI Model Deployment in Mobile Edge Networks](https://ieeexplore.ieee.org/abstract/document/10901571), *IEEE GLOBECOM*, pp. 2647-2652, 2024.
-2. **Yuxin Liang**, Ziqi Zhou, Yibai Liu, Peng Yang, "*****", *AAAI 2026* (under double-blind review).
+1. **Yuxin Liang**, Peng Yang, Yuanyuan He, *et al.*, [Resource-Efficient Generative AI Model Deployment in Mobile Edge Networks](https://ieeexplore.ieee.org/abstract/document/10901571), *IEEE GLOBECOM*, pp. 2647-2652, 2024.
+2.  Congbin Yi, **Yuxin Liang**, Ziqi Zhou,  *et al.*,  "Enhancing Text-to-Image Generation via End-Edge Collaborative Hybrid Super-Resolution", *IEEE ICC*, accepted, 2026.
+3. Ziqi Zhou, Peng Yang, **Yuxin Liang**, *et al.*  "****", *IEEE ICME 2026* (under double-blind review).
    
 Journal Papers
 ------
-1. Peng Yang, **Yuxin Liang**, Yuxin Kong, Mingliu Liu, [Edge-assisted UAV onboard video compression and transmission for efficient inference of patrolling tasks](https://www.wlwxb.com.cn/zh/article/doi/10.11959/j.issn.2096-3750.2024.00418/), *Chinese Journal of Internet*, vol. 8, no. 4, pp. 129-139, 2024. pp. 2647-2652, 2024.
-2. **Yuxin Liang**, Peng Yang, Yuanyuan He, Feng Lyu, "*****", submitted to *IEEE Transactions on Cognitive Communications and Networking* (under review).
+1. **Yuxin Liang**, Peng Yang, Xiangxiang Dai, *et al.*, [Networked Edge Resource Orchestration for Mobile AI-Generated Content Services]([https://ieeexplore.ieee.org/abstract/document/10901571](https://ieeexplore.ieee.org/document/11300262), * IEEE Transactions on Cognitive Communications and Networking*, accepted, 2026.
+2. **Yuxin Liang**, Peng Yang, Ziqi Zhou, *et al.*, "Frequency-Guided Acceleration of Diffusion-based Interactive Denoising in Mobile Edge Networks", *IEEE Transactions on Mobile Computing* (under review).
+3. Peng Yang, **Yuxin Liang**, Yuxin Kong, *et al.*, [Edge-assisted UAV onboard video compression and transmission for efficient inference of patrolling tasks](https://www.wlwxb.com.cn/zh/article/doi/10.11959/j.issn.2096-3750.2024.00418/), *Chinese Journal of Internet*, vol. 8, no. 4, pp. 129-139, 2024. pp. 2647-2652, 2024.
    
 Reviewer for
 ======
@@ -39,6 +41,7 @@ Conference
 Journal
 ------
 * IEEE Internet of Things Journal
+* IEEE Transactions on Mobile Computing
 
 
 Activity
@@ -47,6 +50,7 @@ Activity
 Teaching Assistant
 ------
 * Wireless Communication (for international students)
+* IT Project Management (for international students)
 
 Achievements
 ------
