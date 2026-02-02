@@ -35,6 +35,8 @@ Conference
 ------
 * AAAI Conference on Artificial  Intelligence (AAAI)
 * IEEE Global Communications Conference (GLOBECOM)
+* IEEE International Conference on Communications (ICC)
+* IEEE International Conference on Multimedia and Expo (ICME)
 * IEEE International Conference on High Performance Computing and Communications (HPCC)
 * International Conference on Parallel and Distributed Systems (ICPADS)
    
