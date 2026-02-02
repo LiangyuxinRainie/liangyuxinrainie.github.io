@@ -54,10 +54,12 @@ Teaching Assistant
 
 Achievements
 ------
-* Pacemaker to Merit Student of WHUT
+* Merit Student Pacesetter of WHUT
+* Outstanding Graduates of WHUT
 * First Class Scholarship for Undergraduate Students of WHUT
 * First Class Scholarship for Graduate Students of HUST
 * Outstanding Graduate Student (Innovation in Science and Technology) of HUST
+* Challenge Cup National College Student Competition, National First Prize
 
 Miscellaneous
 ======
