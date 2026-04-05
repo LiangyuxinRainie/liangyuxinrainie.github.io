@@ -44,8 +44,8 @@ Conference
    
 Journal
 ------
-* IEEE Internet of Things Journal
-* IEEE Transactions on Mobile Computing
+* IEEE Internet of Things Journal (IOTJ)
+* IEEE Transactions on Mobile Computing (TMC)
 
 
 Activity
