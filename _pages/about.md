@@ -16,17 +16,19 @@ My email: yuxinliang@hust.edu.cn; yuxinliang155@gmail.com
 Publications
 ======
 
+
+   
+Journal Papers
+------
+1. **Yuxin Liang**, Peng Yang, Ziqi Zhou, *et al.*, "Frequency-Guided Acceleration of Diffusion-based Interactive Denoising in Mobile Edge Networks", *IEEE Transactions on Mobile Computing* (major revision).
+2. **Yuxin Liang**, Peng Yang, Xiangxiang Dai, *et al.*, "[Networked Edge Resource Orchestration for Mobile AI-Generated Content Services](https://ieeexplore.ieee.org/document/11300262)", * IEEE Transactions on Cognitive Communications and Networking*, vol. 1, pp. 5063-5076, 2026.
+3. Peng Yang, **Yuxin Liang**, Yuxin Kong, *et al.*, [Edge-Assisted UAV Onboard Video Compression and Transmission for Efficient Inference of Patrolling Tasks](https://www.wlwxb.com.cn/zh/article/doi/10.11959/j.issn.2096-3750.2024.00418/), *Chinese Journal of Internet*, vol. 8, no. 4, pp. 129-139, 2024. pp. 2647-2652, 2024.
+
 Conference Papers
 ------
 1. **Yuxin Liang**, Peng Yang, Yuanyuan He, *et al.*, "[Resource-Efficient Generative AI Model Deployment in Mobile Edge Networks](https://ieeexplore.ieee.org/abstract/document/10901571)", *IEEE Global Communications Conference (GLOBECOM 2024)*, pp. 2647-2652, 2024.
 2.  Congbin Yi, **Yuxin Liang**, Ziqi Zhou,  *et al.*,  "[Enhancing Text-to-Image Generation via End-Edge Collaborative Hybrid Super-Resolution](https://arxiv.org/abs/2601.14741)", *IEEE International Conference on Communications (ICC 2026)*, accepted, 2026.
-3. Ziqi Zhou, Peng Yang, **Yuxin Liang**, *et al.*  "****", *IEEE International Conference on Multimedia and Expo (ICME 2026)* (under double-blind review).
-   
-Journal Papers
-------
-1. **Yuxin Liang**, Peng Yang, Xiangxiang Dai, *et al.*, "[Networked Edge Resource Orchestration for Mobile AI-Generated Content Services](https://ieeexplore.ieee.org/document/11300262)", * IEEE Transactions on Cognitive Communications and Networking*, accepted, 2026.
-2. **Yuxin Liang**, Peng Yang, Ziqi Zhou, *et al.*, "Frequency-Guided Acceleration of Diffusion-based Interactive Denoising in Mobile Edge Networks", *IEEE Transactions on Mobile Computing* (under review).
-3. Peng Yang, **Yuxin Liang**, Yuxin Kong, *et al.*, [Edge-Assisted UAV Onboard Video Compression and Transmission for Efficient Inference of Patrolling Tasks](https://www.wlwxb.com.cn/zh/article/doi/10.11959/j.issn.2096-3750.2024.00418/), *Chinese Journal of Internet*, vol. 8, no. 4, pp. 129-139, 2024. pp. 2647-2652, 2024.
+3. Ziqi Zhou, Peng Yang, **Yuxin Liang**, *et al.*  "SynerDiff: Synergetic Continuous Batching for Fast and Parallel Diffusion Model Inference", *IEEE International Conference on Multimedia and Expo (ICME 2026)* accepted, 2026.
    
 Reviewer for
 ======
@@ -51,17 +53,18 @@ Activity
 
 Teaching Assistant
 ------
-* Wireless Communication (for international students)
-* IT Project Management (for international students)
+* Mobile Communications (English Course taught to International Master students):  a total of 16 hours experiment tutorial, report evaluation.
+* IT Project Management (English Course taught to International Master students): report evaluation, Q\&A discussions.
 
 Achievements
 ------
-* Merit Student Pacesetter of WHUT
-* Outstanding Graduates of WHUT
-* First Class Scholarship for Undergraduate Students of WHUT
-* First Class Scholarship for Graduate Students of HUST
-* Outstanding Graduate Student (Innovation in Science and Technology) of HUST
-* Challenge Cup National College Student Competition, National First Prize
+* Outstanding Graduate Student (Innovation in Science & Technology), HUST 
+* First-Class Graduate Scholarship, HUST
+* Outstanding Undergraduate Graduate, WHUT
+* Merit Student Pacesetter, WHUT
+* First-Class Undergraduate Scholarship, WHUT
+* National First Prize Challenge Cup: National College Student Academic & Technology Competition
+* National First Prize National University Students’ IC Innovation & Entrepreneurship Competition
 
 Miscellaneous
 ======
