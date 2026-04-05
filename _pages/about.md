@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m Yuxin Liang(梁雨欣), a second year master student from [EIC](https://ei.hust.edu.cn/), [Huazhong Unisersity of Science and Technology](https://www.hust.edu.cn/), China, advised by [Prof. Peng Yang](https://scholar.google.com/citations?hl=en&user=8v7c4rYAAAAJ). I received my B.Eng. degree at Wuhan University of Technology, China. My current research interest includes AI-driven network optimization 💻,Mobile Edge Computing 📱, Mobile AIGC Networks 🌟, Distributed Inference 📚 and Diffusion Model 🖼️.
+I’m Yuxin Liang(梁雨欣), a second year master student from [EIC](https://ei.hust.edu.cn/), [Huazhong Unisersity of Science and Technology](https://www.hust.edu.cn/), China, advised by [Prof. Peng Yang](https://scholar.google.com/citations?hl=en&user=8v7c4rYAAAAJ). I received my B.Eng. degree at Wuhan University of Technology, China. My current research interest includes Networking for AI 💻, Mobile Edge Computing and Edge Intelligence 📱, Mobile AIGC Networks 🌟, Distributed Inference 📚, Diffusion Models and Generative AI 🖼️.
 
 My email: yuxinliang@hust.edu.cn; yuxinliang155@gmail.com
 
