@@ -28,7 +28,7 @@ Conference Papers
 ------
 1. **Yuxin Liang**, Peng Yang, Yuanyuan He, *et al.*, "[Resource-Efficient Generative AI Model Deployment in Mobile Edge Networks](https://ieeexplore.ieee.org/abstract/document/10901571)", *IEEE Global Communications Conference (GLOBECOM 2024)*, pp. 2647-2652, 2024.
 2.  Congbin Yi, **Yuxin Liang**, Ziqi Zhou,  *et al.*,  "[Enhancing Text-to-Image Generation via End-Edge Collaborative Hybrid Super-Resolution](https://arxiv.org/abs/2601.14741)", *IEEE International Conference on Communications (ICC 2026)*, accepted, 2026.
-3. Ziqi Zhou, Peng Yang, **Yuxin Liang**, *et al.*  "SynerDiff: Synergetic Continuous Batching for Fast and Parallel Diffusion Model Inference", *IEEE International Conference on Multimedia and Expo (ICME 2026)* accepted, 2026.
+3. Ziqi Zhou, Peng Yang, **Yuxin Liang**, *et al.*  "SynerDiff: Synergetic Continuous Batching for Fast and Parallel Diffusion Model Inference", *IEEE International Conference on Multimedia and Expo (ICME 2026)*, accepted, 2026.
    
 Reviewer for
 ======
