@@ -54,7 +54,7 @@ Activity
 Teaching Assistant
 ------
 * Mobile Communications (English Course taught to International Master students):  a total of 16 hours experiment tutorial, report evaluation.
-* IT Project Management (English Course taught to International Master students): report evaluation, Q\&A discussions.
+* IT Project Management (English Course taught to International Master students): report evaluation, Q&A discussions.
 
 Achievements
 ------
