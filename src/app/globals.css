@@ -208,6 +208,56 @@ body {
   background: var(--neutral-500);
 }
 
+/* Card surfaces are scoped to the home page. */
+.home-page {
+  --home-card-background: var(--background);
+  background: var(--neutral-100);
+}
+
+.dark .home-page {
+  --home-card-background: var(--neutral-50);
+  background: var(--background);
+}
+
+.home-card,
+.home-profile-block {
+  min-width: 0;
+  padding: 1.25rem;
+  border: 1px solid var(--neutral-200);
+  border-radius: 1rem;
+  background: var(--home-card-background);
+  box-shadow: 0 1px 2px rgb(17 24 39 / 4%);
+}
+
+@media (min-width: 40rem) {
+  .home-card,
+  .home-profile-block {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .home-card {
+    padding: 1.75rem;
+  }
+
+  .home-profile {
+    padding: 1.5rem;
+    border: 1px solid var(--neutral-200);
+    border-radius: 1rem;
+    background: var(--home-card-background);
+    box-shadow: 0 1px 2px rgb(17 24 39 / 4%);
+  }
+
+  .home-profile-block {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
 /* Self-hosted visitor map */
 .visitor-map-shell {
   width: 100%;

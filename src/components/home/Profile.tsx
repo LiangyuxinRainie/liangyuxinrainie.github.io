@@ -83,8 +83,8 @@ export default function Profile({ author, social, researchInterests }: ProfilePr
     };
 
     return (
-        <div className="fade-in-up contents lg:sticky lg:top-28 lg:col-span-1 lg:ml-auto lg:block lg:w-72 lg:self-start">
-            <div className="order-1 lg:order-none">
+        <div className="home-profile fade-in-up contents lg:sticky lg:top-28 lg:col-span-1 lg:block lg:w-full lg:self-start">
+            <div className="home-profile-block order-1 lg:order-none">
                 <div className="mx-auto mb-5 h-56 w-56 overflow-hidden rounded-lg bg-neutral-100 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-md sm:h-64 sm:w-64">
                     <Image
                         src={author.avatar}
@@ -217,7 +217,7 @@ export default function Profile({ author, social, researchInterests }: ProfilePr
             </div>
 
             {researchInterests && researchInterests.length > 0 && (
-                <div className="order-2 lg:order-none lg:mb-8">
+                <div className="home-profile-block order-2 lg:order-none lg:mb-8">
                     <h3 className="mb-3 border-b border-neutral-200 pb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
                         Research Interests
                     </h3>
@@ -229,7 +229,7 @@ export default function Profile({ author, social, researchInterests }: ProfilePr
                 </div>
             )}
 
-            <div className="order-4 transition-transform duration-200 hover:scale-[1.02] lg:order-none lg:mb-8">
+            <div className="home-profile-block order-4 transition-transform duration-200 hover:scale-[1.02] lg:order-none">
                 <h3 className="mb-3 border-b border-neutral-200 pb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
                     Visitors
                 </h3>

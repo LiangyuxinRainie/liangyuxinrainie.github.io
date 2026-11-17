@@ -63,20 +63,29 @@ export default function Home() {
   const aboutConfig = getPageConfig<AboutConfig>('about');
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 bg-background min-h-screen">
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+    <div className="home-page min-h-screen">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-[20rem_minmax(0,1fr)] gap-8 lg:gap-12">
 
-        {/* Profile becomes two ordered grid items on mobile and one sticky column on desktop. */}
-        <Profile
-          author={config.author}
-          social={config.social}
-          researchInterests={aboutConfig?.profile?.research_interests}
-        />
+          {/* Keep the mobile section order and group the desktop sidebar in one card. */}
+          <Profile
+            author={config.author}
+            social={config.social}
+            researchInterests={aboutConfig?.profile?.research_interests}
+          />
 
-        <div className="order-3 space-y-8 lg:order-none lg:col-span-2">
-          <section id="about" className="scroll-mt-24 space-y-8">
-            {(aboutConfig?.sections || []).map(renderSection)}
-          </section>
+          <div className="order-3 min-w-0 lg:order-none">
+            <section id="about" className="scroll-mt-24 space-y-8">
+              {(aboutConfig?.sections || []).map((section) => {
+                const content = renderSection(section);
+                return content ? (
+                  <div key={section.id} className="home-card">
+                    {content}
+                  </div>
+                ) : null;
+              })}
+            </section>
+          </div>
         </div>
       </div>
     </div>
