@@ -1,8 +1,9 @@
 type = "list"
 title = "Awards"
-description = "Selected honors and awards."
+# description = "Selected honors and awards."
 
 [[sections]]
+title = "Selected honors and awards."
 items = [
 { date = "2026-10", content = "**National Scholarship**" },
   { date = "2026-09", content = "**Merit Student**, Huazhong University of Science and Technology" },
