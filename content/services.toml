@@ -1,0 +1,22 @@
+type = "list"
+title = "Services"
+# description = "Peer review and academic service."
+
+[[sections]]
+title = "Journal Reviewers"
+items = [
+  { content = "IEEE Transactions on Mobile Computing (TMC)" },
+  { content = "IEEE Internet of Things Journal (IoTJ)" },
+]
+
+[[sections]]
+title = "Conference Reviewers"
+items = [
+  { content = "AAAI Conference on Artificial Intelligence (AAAI)" },
+  { content = "IEEE Global Communications Conference (GLOBECOM)" },
+  { content = "IEEE International Conference on Communications (ICC)" },
+  { content = "IEEE International Conference on Multimedia and Expo (ICME)" },
+  { content = "IEEE International Conference on High Performance Computing and Communications (HPCC)" },
+  { content = "IEEE International Conference on Parallel and Distributed Systems (ICPADS)" },
+  { content = "IEEE/CIC International Conference on Communications in China (ICCC)" },
+]

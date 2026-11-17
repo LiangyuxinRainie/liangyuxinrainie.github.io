@@ -1,0 +1,9 @@
+type = "list"
+title = "Teaching"
+
+[[sections]]
+title = "Teaching Assistant"
+items = [
+  { content = "**Mobile Communications**, Huazhong University of Science and Technology" },
+  { content = "**IT Project Management**, Huazhong University of Science and Technology" },
+]

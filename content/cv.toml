@@ -1,0 +1,4 @@
+type = "text"
+title = "Curriculum Vitae"
+description = "Education, research experience, honors, skills, teaching, and academic service."
+source = "cv.md"

@@ -1,0 +1,17 @@
+type = "list"
+title = "Awards"
+description = "Selected honors and awards."
+
+[[sections]]
+items = [
+{ date = "2026-10", content = "**National Scholarship**" },
+  { date = "2026-09", content = "**Merit Student**, Huazhong University of Science and Technology" },
+  { date = "2025-11", content = "**Outstanding Graduate Student (Innovation in Science and Technology)**, Huazhong University of Science and Technology" },
+  { date = "2025-10", content = "**National First Prize**, Challenge Cup: National College Student Academic and Technology Competition" },
+  { date = "2024-12", content = "**First-Class Graduate Scholarship**, Huazhong University of Science and Technology" },
+  { date = "2024-06", content = "**Outstanding Graduate**, Wuhan University of Technology" },
+  { date = "2023-08", content = "**National First Prize**, National University Students' IC Innovation and Entrepreneurship Competition" },
+  { date = "2022-11", content = "**Merit Student Pacesetter**, Wuhan University of Technology" },
+  { date = "2021-11", content = "**Merit Student Pacesetter**, Wuhan University of Technology" },
+  { date = "2021-11", content = "**First-Class Undergraduate Scholarship**, Wuhan University of Technology" },
+]

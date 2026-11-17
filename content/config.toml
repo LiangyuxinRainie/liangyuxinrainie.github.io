@@ -1,0 +1,58 @@
+[site]
+title = "Yuxin Liang"
+home_title = "Yuxin Liang (梁雨欣) | M.S. Student, HUST"
+description = "Yuxin Liang is an M.S. student at Huazhong University of Science and Technology researching edge intelligence, mobile AIGC networks, and efficient generative AI inference."
+url = "https://liangyuxinrainie.github.io"
+favicon = "/logo-graduation-gown.svg"
+
+[author]
+name = "Yuxin Liang"
+title = "M.S. Student"
+institution = "Huazhong University of Science and Technology"
+email = "yuxinliang155@gmail.com"
+avatar = "/lyx.jpg"
+
+[social]
+# email = "yuxinliang155@gmail.com"
+# location = "Wuhan, China"
+# location_url = "https://maps.google.com/?q=Huazhong+University+of+Science+and+Technology"
+# location_details = [
+#   "Huazhong University of Science and Technology,",
+#   "1037 Luoyu Road, Wuhan, China"
+# ]
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Teaching"
+type = "page"
+target = "teaching"
+href = "/teaching"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "Service"
+type = "page"
+target = "services"
+href = "/services"
+
+# [[navigation]]
+# title = "CV"
+# type = "page"
+# target = "cv"
+# href = "/cv"

@@ -1,0 +1,1 @@
+Email is the best way to reach me. I welcome messages about research, collaboration, or shared interests: [yuxinliang155@gmail.com](mailto:yuxinliang155@gmail.com).
