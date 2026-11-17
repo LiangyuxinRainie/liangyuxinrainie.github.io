@@ -15,9 +15,6 @@ Homepage and page content is stored in `content/`:
 - `teaching.toml`, `awards.toml`, and `services.toml`: academic activity pages
 - `cv.md`: curriculum vitae
 
-Publication preview images are stored in `public/papers/`. The visitor panel
-uses the live FlagCounter component configured in
-`src/components/home/VisitorMap.tsx`.
 
 ## Local development
 
