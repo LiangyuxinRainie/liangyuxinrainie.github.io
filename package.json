@@ -3,6 +3,8 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
+    "update:visitors": "node scripts/update-visitor-stats.mjs",
+    "test:visitors": "node --test scripts/update-visitor-stats.test.mjs",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@google-analytics/data": "^7.3.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

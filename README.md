@@ -15,6 +15,10 @@ Homepage and page content is stored in `content/`:
 - `teaching.toml`, `awards.toml`, and `services.toml`: academic activity pages
 - `cv.md`: curriculum vitae
 
+Publication preview images are stored in `public/papers/`. The visitor panel
+renders a local world map, country flags, and GA4 visitor totals.
+Edit public analytics IDs in `content/analytics.toml`; follow
+[`docs/visitor-map.md`](docs/visitor-map.md) to enable scheduled updates.
 
 ## Local development
 
