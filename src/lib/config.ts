@@ -15,10 +15,14 @@ export interface SiteConfig {
         title: string;
         institution: string;
         avatar: string;
-        email: string;
+        email?: string;
         motto?: string;
     };
     social: {
+        email?: string;
+        location?: string;
+        location_url?: string;
+        location_details?: string[];
         google_scholar?: string;
         orcid?: string;
         github?: string;

@@ -9,17 +9,17 @@ favicon = "/logo-graduation-gown.svg"
 name = "Yuxin Liang"
 title = "M.S. Student"
 institution = "Huazhong University of Science and Technology"
-email = "yuxinliang155@gmail.com"
+# email = "yuxinliang155@gmail.com"
 avatar = "/lyx.jpg"
 
 [social]
-# email = "yuxinliang155@gmail.com"
-# location = "Wuhan, China"
-# location_url = "https://maps.google.com/?q=Huazhong+University+of+Science+and+Technology"
-# location_details = [
-#   "Huazhong University of Science and Technology,",
-#   "1037 Luoyu Road, Wuhan, China"
-# ]
+email = "yuxinliang155@gmail.com"
+location = "Wuhan, China"
+location_url = "https://maps.google.com/?q=Huazhong+University+of+Science+and+Technology"
+location_details = [
+  "Huazhong University of Science and Technology,",
+  "1037 Luoyu Road, Wuhan, China"
+]
 
 [[navigation]]
 title = "About"

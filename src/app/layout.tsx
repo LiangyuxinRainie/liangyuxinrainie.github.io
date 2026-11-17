@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import { getConfig } from "@/lib/config";
 import { getLastUpdated } from "@/lib/lastUpdated";
@@ -110,6 +111,7 @@ export default function RootLayout({
           </main>
           <Footer lastUpdated={getLastUpdated()} owner={config.author.name} />
         </ThemeProvider>
+        <GoogleAnalytics />
       </body>
     </html>
   );

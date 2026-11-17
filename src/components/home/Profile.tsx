@@ -1,10 +1,20 @@
-import VisitorMap from './VisitorMap';
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
-import { AcademicCapIcon } from '@heroicons/react/24/outline';
+import {
+    AcademicCapIcon,
+    EnvelopeIcon,
+    MapPinIcon,
+} from '@heroicons/react/24/outline';
+import {
+    EnvelopeIcon as EnvelopeSolidIcon,
+    MapPinIcon as MapPinSolidIcon,
+} from '@heroicons/react/24/solid';
 import { Github, Linkedin } from 'lucide-react';
+import VisitorMap from './VisitorMap';
 import { SiteConfig } from '@/lib/config';
 
-// Custom ORCID icon component
 const OrcidIcon = ({ className }: { className?: string }) => (
     <svg
         viewBox="0 0 24 24"
@@ -22,103 +32,190 @@ interface ProfileProps {
     researchInterests?: string[];
 }
 
+type ContactKind = 'email' | 'location';
+
 export default function Profile({ author, social, researchInterests }: ProfileProps) {
+    const [hoveredContact, setHoveredContact] = useState<ContactKind | null>(null);
+    const [pinnedContact, setPinnedContact] = useState<ContactKind | null>(null);
+    const visibleContact = hoveredContact ?? pinnedContact;
+
     const socialLinks = [
+        ...(social.email ? [{
+            name: 'Email',
+            href: `mailto:${social.email}`,
+            icon: EnvelopeIcon,
+            kind: 'email' as const,
+        }] : []),
+        ...(social.location || social.location_details ? [{
+            name: 'Address',
+            href: social.location_url || '#',
+            icon: MapPinIcon,
+            kind: 'location' as const,
+        }] : []),
         ...(social.google_scholar ? [{
             name: 'Google Scholar',
             href: social.google_scholar,
             icon: AcademicCapIcon,
+            kind: 'external' as const,
         }] : []),
         ...(social.orcid ? [{
             name: 'ORCID',
             href: social.orcid,
             icon: OrcidIcon,
+            kind: 'external' as const,
         }] : []),
         ...(social.github ? [{
             name: 'GitHub',
             href: social.github,
             icon: Github,
+            kind: 'external' as const,
         }] : []),
         ...(social.linkedin ? [{
             name: 'LinkedIn',
             href: social.linkedin,
             icon: Linkedin,
+            kind: 'external' as const,
         }] : []),
     ];
 
+    const toggleContact = (kind: ContactKind) => {
+        setPinnedContact((current) => current === kind ? null : kind);
+    };
+
     return (
-        // On desktop the sidebar is narrower than its grid column and sits against the main column,
-        // so the sections below keep close to the centered photo instead of running to the page edge.
-        // It sticks where it starts (top-28 = the 5rem fixed nav plus the 2rem page padding), so the
-        // photo stays clear of the nav while the sidebar is held in place.
         <div className="fade-in-up contents lg:sticky lg:top-28 lg:col-span-1 lg:ml-auto lg:block lg:w-72 lg:self-start">
             <div className="order-1 lg:order-none">
-            {/* Profile Image */}
-            <div className="w-36 h-36 sm:w-48 sm:h-48 mx-auto mb-5 rounded-full overflow-hidden bg-neutral-100">
-                <Image
-                    src={author.avatar}
-                    alt={author.name}
-                    width={256}
-                    height={256}
-                    className="w-full h-full object-cover object-center"
-                    priority
-                />
-            </div>
+                <div className="mx-auto mb-5 h-56 w-56 overflow-hidden rounded-lg bg-neutral-100 shadow-sm transition-all duration-200 hover:scale-[1.02] hover:shadow-md sm:h-64 sm:w-64">
+                    <Image
+                        src={author.avatar}
+                        alt={author.name}
+                        width={256}
+                        height={256}
+                        className="h-full w-full object-cover object-[32%_center]"
+                        priority
+                    />
+                </div>
 
-            {/* Name and Title */}
-            <div className="text-center mb-4">
-                <h1 className="text-2xl font-semibold tracking-tight text-primary mb-1">
-                    {author.name}
-                </h1>
-                <p className="font-medium text-neutral-700 mb-1">
-                    {author.title}
-                </p>
-                <p className="text-sm text-neutral-500 mb-1">
-                    {author.institution}
-                </p>
-                <p className="text-sm text-neutral-500">
-                    <a
-                        href={`mailto:${author.email}`}
-                        className="transition-colors duration-200 hover:text-accent"
-                    >
-                        {author.email}
-                    </a>
-                </p>
-                {author.motto && (
-                    <p className="mt-3 text-sm italic text-neutral-600">
-                        {author.motto}
+                <div className="mb-4 text-center">
+                    <h1 className="mb-1 text-2xl font-semibold tracking-tight text-primary">
+                        {author.name}
+                    </h1>
+                    <p className="mb-1 font-medium text-neutral-700">
+                        {author.title}
                     </p>
-                )}
-            </div>
+                    <p className="text-sm text-neutral-500">
+                        {author.institution}
+                    </p>
+                    {author.motto && (
+                        <p className="mt-3 text-sm italic text-neutral-600">
+                            {author.motto}
+                        </p>
+                    )}
+                </div>
 
-            {/* Contact Links */}
-            <div className="flex flex-wrap justify-center gap-3 lg:mb-8 px-2">
-                {socialLinks.map((link) => {
-                    const IconComponent = link.icon;
-                    return (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group relative p-2 text-neutral-500 hover:text-accent transition-colors duration-200"
-                            aria-label={link.name}
-                        >
-                            <IconComponent className="h-5 w-5" />
-                            {/* Shows immediately on hover or keyboard focus; the native title tooltip is slow and unreliable over SVGs. */}
-                            <span
-                                aria-hidden="true"
-                                className="pointer-events-none absolute left-1/2 top-full z-10 mt-1 -translate-x-1/2 whitespace-nowrap rounded bg-primary px-2 py-1 text-xs font-medium text-background opacity-0 transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100"
+                <div className="relative flex flex-wrap justify-center gap-3 px-2 lg:mb-8">
+                    {socialLinks.map((link) => {
+                        const IconComponent = link.icon;
+
+                        if (link.kind === 'email' || link.kind === 'location') {
+                            const isPinned = pinnedContact === link.kind;
+                            const isVisible = visibleContact === link.kind;
+                            const ActiveIcon = link.kind === 'email' ? EnvelopeSolidIcon : MapPinSolidIcon;
+                            const tooltipId = `profile-${link.kind}-tooltip`;
+
+                            return (
+                                <div
+                                    key={link.name}
+                                    className="relative"
+                                    onMouseEnter={() => setHoveredContact(link.kind)}
+                                    onMouseLeave={() => setHoveredContact(null)}
+                                >
+                                    <button
+                                        type="button"
+                                        onClick={() => toggleContact(link.kind)}
+                                        onKeyDown={(event) => {
+                                            if (event.key === 'Escape') setPinnedContact(null);
+                                        }}
+                                        className={`p-2 transition-colors duration-200 ${isPinned ? 'text-accent' : 'text-neutral-500 hover:text-accent'}`}
+                                        aria-label={`Show ${link.name.toLowerCase()}`}
+                                        aria-expanded={isVisible}
+                                        aria-describedby={isVisible ? tooltipId : undefined}
+                                    >
+                                        {isPinned
+                                            ? <ActiveIcon className="h-5 w-5" />
+                                            : <IconComponent className="h-5 w-5" />
+                                        }
+                                    </button>
+
+                                    {isVisible && (
+                                        <div
+                                            id={tooltipId}
+                                            role="tooltip"
+                                            className="absolute bottom-full left-1/2 z-30 mb-2 w-max max-w-[min(18rem,calc(100vw-2rem))] -translate-x-1/2 rounded-md bg-primary px-3 py-2 text-center text-xs leading-relaxed text-background shadow-lg"
+                                        >
+                                            {link.kind === 'email' ? (
+                                                <>
+                                                    <p className="mb-1 font-semibold">Email</p>
+                                                    <p className="break-all">{social.email?.replace('@', ' (at) ')}</p>
+                                                    <a
+                                                        href={link.href}
+                                                        className="mt-2 inline-flex items-center gap-1.5 rounded bg-accent px-2.5 py-1 font-medium text-white transition-colors hover:bg-accent-dark"
+                                                    >
+                                                        <EnvelopeIcon className="h-3.5 w-3.5" />
+                                                        Send email
+                                                    </a>
+                                                </>
+                                            ) : (
+                                                <>
+                                                    <p className="mb-1 font-semibold">Work Address</p>
+                                                    {(social.location_details?.length
+                                                        ? social.location_details
+                                                        : [social.location]
+                                                    ).filter(Boolean).map((line, index) => (
+                                                        <p key={index}>{line}</p>
+                                                    ))}
+                                                    {social.location_url && (
+                                                        <a
+                                                            href={social.location_url}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="mt-2 inline-flex items-center gap-1.5 rounded bg-accent px-2.5 py-1 font-medium text-white transition-colors hover:bg-accent-dark"
+                                                        >
+                                                            <MapPinIcon className="h-3.5 w-3.5" />
+                                                            Google Maps
+                                                        </a>
+                                                    )}
+                                                </>
+                                            )}
+                                            <span className="absolute left-1/2 top-full h-0 w-0 -translate-x-1/2 border-x-4 border-t-4 border-x-transparent border-t-primary" />
+                                        </div>
+                                    )}
+                                </div>
+                            );
+                        }
+
+                        return (
+                            <a
+                                key={link.name}
+                                href={link.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group relative p-2 text-neutral-500 transition-colors duration-200 hover:text-accent"
+                                aria-label={link.name}
                             >
-                                {link.name}
-                            </span>
-                        </a>
-                    );
-                })}
-            </div>
+                                <IconComponent className="h-5 w-5" />
+                                <span
+                                    aria-hidden="true"
+                                    className="pointer-events-none absolute left-1/2 top-full z-10 mt-1 -translate-x-1/2 whitespace-nowrap rounded bg-primary px-2 py-1 text-xs font-medium text-background opacity-0 transition-opacity duration-150 group-hover:opacity-100 group-focus-visible:opacity-100"
+                                >
+                                    {link.name}
+                                </span>
+                            </a>
+                        );
+                    })}
+                </div>
             </div>
 
-            {/* Research Interests */}
             {researchInterests && researchInterests.length > 0 && (
                 <div className="order-2 lg:order-none lg:mb-8">
                     <h3 className="mb-3 border-b border-neutral-200 pb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
@@ -132,14 +229,12 @@ export default function Profile({ author, social, researchInterests }: ProfilePr
                 </div>
             )}
 
-            {/* Visitor map */}
             <div className="order-4 transition-transform duration-200 hover:scale-[1.02] lg:order-none lg:mb-8">
                 <h3 className="mb-3 border-b border-neutral-200 pb-2 text-xs font-semibold uppercase tracking-wider text-neutral-500">
                     Visitors
                 </h3>
                 <VisitorMap />
             </div>
-
         </div>
     );
 }

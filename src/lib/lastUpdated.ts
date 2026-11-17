@@ -4,7 +4,7 @@ export function getLastModified(): Date | undefined {
   try {
     const iso = execFileSync(
       "git",
-      ["log", "-1", "--format=%cI"],
+      ["log", "-1", "--format=%cI", "--", ".", ":(exclude)public/visitor-stats.json"],
       { encoding: "utf8" }
     ).trim();
 

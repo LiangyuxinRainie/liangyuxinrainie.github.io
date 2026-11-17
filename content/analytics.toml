@@ -1,0 +1,7 @@
+# Public GA4 configuration. Service-account keys belong only in GitHub Secrets.
+measurement_id = "G-L4W4XSTEX3"
+# GA4 property ID, NOT the numeric data stream ID.
+property_id = "564818493"
+# Optional: restrict reports to this web data stream.
+stream_id = ""
+start_date = "2020-10-14"
