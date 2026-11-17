@@ -9,6 +9,8 @@ on:
       - .github/workflows/update-visitors.yml
       - scripts/update-visitor-stats.mjs
       - content/analytics.toml
+      # Refresh generated statistics after manual uploads.
+      - public/visitor-stats.json
   schedule:
     - cron: '15 */6 * * *'
 
