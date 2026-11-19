@@ -1,25 +1,25 @@
 {
-  "visitors": 4,
+  "visitors": 8,
   "countries": [
     {
-      "name": "China",
-      "code": "CN",
-      "value": 2
+      "name": "United States",
+      "code": "US",
+      "value": 4
     },
     {
       "name": "Australia",
       "code": "AU",
-      "value": 1
+      "value": 2
     },
     {
-      "name": "United States",
-      "code": "US",
-      "value": 1
+      "name": "China",
+      "code": "CN",
+      "value": 2
     }
   ],
   "startDate": "2020-10-14",
   "endDate": "today",
   "hostname": "liangyuxinrainie.github.io",
   "streamId": "",
-  "updatedAt": "2026-11-17T20:54:35.325Z"
+  "updatedAt": "2026-11-19T20:36:14.619Z"
 }
