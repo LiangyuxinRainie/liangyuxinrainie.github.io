@@ -1,10 +1,10 @@
 {
-  "visitors": 8,
+  "visitors": 10,
   "countries": [
     {
       "name": "United States",
       "code": "US",
-      "value": 4
+      "value": 5
     },
     {
       "name": "Australia",
@@ -15,11 +15,16 @@
       "name": "China",
       "code": "CN",
       "value": 2
+    },
+    {
+      "name": "Iran",
+      "code": "IR",
+      "value": 1
     }
   ],
   "startDate": "2020-10-14",
   "endDate": "today",
   "hostname": "liangyuxinrainie.github.io",
   "streamId": "",
-  "updatedAt": "2026-11-19T20:36:14.619Z"
+  "updatedAt": "2026-11-21T07:05:56.255Z"
 }
